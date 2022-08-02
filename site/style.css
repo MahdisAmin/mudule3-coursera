@@ -1,15 +1,16 @@
 *{
-	margin: 0px;
-	box-sizing: border-box;
-} 
+	 margin: 0px;
+	box-sizing: border-box; 
+}
 body{
+	background-color: white;
 	color: black;
 	font-size: 16px;
 	font-family: 'Oxygen', sans-serif;
 }
 
 #header-nav{
-	background-color: rgb(63, 60, 60);
+	background-color: gray;
 	border-radius: 0;
 	border: 0;
 }
@@ -37,14 +38,13 @@ body{
 	margin-right: 5px;	
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-	border: 2px solid gray;
+	border: 2px solid black;
 	background: #ffffff;
 }
 
 .section-background-color{
 	background-color: gray;
-	padding: 5px;
-    margin-bottom: 10px;
+	/*padding: 5px;*/
 } 
 
 #chicken{
@@ -56,7 +56,9 @@ body{
 
 /*** Large devices only ***/
 @media (min-width: 1200px) {
-	
+	.col-lg-4{
+		width: 32.33333%;
+	}
 }
 
 /*** Medium devices only ***/
@@ -88,13 +90,16 @@ body{
 
 /*** Small devices only ***/
 @media (max-width: 767px) {
-    .row{
-        padding: 30px;
-    }
+	.row{
+		padding: 30px;
+	}
 	h1{
 		margin-left: 25px;
 		display: inline-block;
 		margin-top: 10px;
+	}
+	p{
+		text-align: center;
 	}
 	#company-name{
 		font-size: 2em;
@@ -102,7 +107,7 @@ body{
 	}
 	.navbar-default .navbar-collapse{
 		border: none;
-		background-color: rgb(235, 177, 177);
+		background-color: pink;
 	}
 	/*.col-md-6, .col-lg-4{
 		width: 100%;
@@ -112,14 +117,15 @@ body{
 	#beef{
 		margin: 10px 0px;
 	}
-    p{
-        text-align: center;
-    }
 	.internal-link{
 		margin-top: 10px;
 		text-transform: uppercase;
 	}
 	 a:hover{
-	 	color: rgb(197, 116, 184);
+	 	color: maroon;
+		text-decoration: none;
+		font-size: 20px;
+		color: salmon;
 	}
 } /*end media query*/
+
